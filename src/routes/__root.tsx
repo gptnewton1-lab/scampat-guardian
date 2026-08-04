@@ -78,21 +78,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Faro-Detect — SMS scam detection" },
+      { title: "Faro-Detect — Spot SMS scams before they cost you" },
       {
         name: "description",
         content:
-          "Faro-Detect analyses suspicious SMS messages and returns a risk score, scam category and clear explanation.",
+          "Paste a suspicious SMS and get an instant risk score, scam category and plain-English explanation. Built for mobile money fraud in Cameroon and across Africa.",
       },
       { name: "author", content: "Faro-Detect" },
-      { property: "og:title", content: "Faro-Detect — SMS scam detection" },
+      { property: "og:title", content: "Faro-Detect — Spot SMS scams before they cost you" },
       {
         property: "og:description",
-        content: "Instant risk scoring for suspicious SMS messages.",
+        content: "Paste a suspicious SMS and get an instant risk score, scam category and plain-English explanation. Built for mobile money fraud in Cameroon and across Africa.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Faro-Detect — Spot SMS scams before they cost you" },
+      { name: "twitter:description", content: "Paste a suspicious SMS and get an instant risk score, scam category and plain-English explanation. Built for mobile money fraud in Cameroon and across Africa." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cb797d92-0ce5-473a-b4b2-c8f41213d4cc/id-preview-104f47d2--f7c78214-1cc0-4e3f-88be-0cdf1fd902b7.lovable.app-1785854306523.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cb797d92-0ce5-473a-b4b2-c8f41213d4cc/id-preview-104f47d2--f7c78214-1cc0-4e3f-88be-0cdf1fd902b7.lovable.app-1785854306523.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

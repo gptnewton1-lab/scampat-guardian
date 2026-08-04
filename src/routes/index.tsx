@@ -63,7 +63,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Instant risk scoring for suspicious SMS: OTP theft, fake mobile money alerts, phishing links and prize scams.",
+          "Paste a suspicious SMS and get an instant risk score, scam category and plain-English explanation. Built for mobile money fraud in Cameroon and across Africa.",
       },
     ],
   }),
