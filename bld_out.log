@@ -1,0 +1,108 @@
+
+> build
+> vite build
+
+[36mvite v8.2.1 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1926 modules transformed.
+rendering chunks...
+computing gzip size...
+.output/public/assets/styles-C0dwTM6U.css           81.34 kB │ gzip:  13.71 kB
+.output/public/assets/loader-circle-BsfCfGXK.js      0.13 kB │ gzip:   0.14 kB
+.output/public/assets/useAuth-C1-wSgS5.js            0.32 kB │ gzip:   0.24 kB
+.output/public/assets/Logo-B7JrGcHq.js               0.80 kB │ gzip:   0.47 kB
+.output/public/assets/_authenticated-DrfP9q5n.js     2.10 kB │ gzip:   1.02 kB
+.output/public/assets/history-lJZCaBOy.js            2.69 kB │ gzip:   1.24 kB
+.output/public/assets/ResultCard-CB4ovajF.js         3.69 kB │ gzip:   1.27 kB
+.output/public/assets/dashboard-DWSC5LVP.js          4.37 kB │ gzip:   1.86 kB
+.output/public/assets/auth-DUr1ht92.js               4.56 kB │ gzip:   2.02 kB
+.output/public/assets/detect-CJL-jUSh.js             6.01 kB │ gzip:   2.85 kB
+.output/public/assets/routes-nRbbdpZc.js             7.47 kB │ gzip:   2.79 kB
+.output/public/assets/useRouter-CE9wq6V6.js         12.05 kB │ gzip:   4.30 kB
+.output/public/assets/scans.functions-IwADqRuR.js   16.15 kB │ gzip:   5.89 kB
+.output/public/assets/link-CwMN2Z47.js              21.60 kB │ gzip:   8.30 kB
+.output/public/assets/button-Bj5Z6xY-.js            33.09 kB │ gzip:  11.04 kB
+.output/public/assets/index-CE-E8ps6.js            404.72 kB │ gzip: 121.10 kB
+
+[32m✓ built in 1m 13s[39m
+[36mvite v8.2.1 [32mbuilding ssr environment for production...[36m[39m
+[2Ktransforming...✓ 84 modules transformed.
+rendering chunks...
+computing gzip size...
+node_modules/.nitro/vite/services/ssr/assets/styles-C0dwTM6U.css                     81.34 kB │ gzip: 13.71 kB
+node_modules/.nitro/vite/services/ssr/assets/empty-plugin-adapters-D9UWiqvJ.js        0.22 kB │ gzip:  0.16 kB
+node_modules/.nitro/vite/services/ssr/assets/useAuth-CYm0zXNo.js                      0.65 kB │ gzip:  0.37 kB
+node_modules/.nitro/vite/services/ssr/assets/Logo-D8Cxh39n.js                         0.73 kB │ gzip:  0.39 kB
+node_modules/.nitro/vite/services/ssr/assets/button-DRsC1qZi.js                       1.78 kB │ gzip:  0.82 kB
+node_modules/.nitro/vite/services/ssr/assets/start-CKXsRWxz.js                        1.95 kB │ gzip:  0.86 kB
+node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-gbp7sfiV.js   2.26 kB │ gzip:  0.61 kB
+node_modules/.nitro/vite/services/ssr/assets/scans.functions-CJny-Cgf.js              2.60 kB │ gzip:  1.29 kB
+node_modules/.nitro/vite/services/ssr/assets/watchman-api-k7bjsX76.js                 2.71 kB │ gzip:  1.13 kB
+node_modules/.nitro/vite/services/ssr/assets/_authenticated-DKq9CQ8c.js               2.77 kB │ gzip:  1.10 kB
+node_modules/.nitro/vite/services/ssr/assets/createCsrfMiddleware-B2To0gPJ.js         3.19 kB │ gzip:  1.01 kB
+node_modules/.nitro/vite/services/ssr/assets/scans.functions-DI8WZ43S.js              3.39 kB │ gzip:  1.53 kB
+node_modules/.nitro/vite/services/ssr/assets/history-mp2F39h8.js                      4.20 kB │ gzip:  1.53 kB
+node_modules/.nitro/vite/services/ssr/assets/ResultCard-DXMOagg1.js                   4.39 kB │ gzip:  1.23 kB
+node_modules/.nitro/vite/services/ssr/index.js                                        4.63 kB │ gzip:  1.93 kB
+node_modules/.nitro/vite/services/ssr/assets/auth-BCZUM7p5.js                         5.95 kB │ gzip:  2.10 kB
+node_modules/.nitro/vite/services/ssr/assets/dashboard-Crk5BVye.js                    6.27 kB │ gzip:  2.16 kB
+node_modules/.nitro/vite/services/ssr/assets/detect-orfWbcBq.js                       7.45 kB │ gzip:  3.21 kB
+node_modules/.nitro/vite/services/ssr/assets/routes-DpCdWelG.js                       8.53 kB │ gzip:  2.60 kB
+node_modules/.nitro/vite/services/ssr/assets/router-C18WoxHt.js                      11.54 kB │ gzip:  3.07 kB
+node_modules/.nitro/vite/services/ssr/assets/server-8tECIjOw.js                      66.83 kB │ gzip: 17.14 kB
+
+[32m✓ built in 3.98s[39m
+
+[90m[[90mnitro[90m][39m [35m◐[39m Building [[35mNitro[39m] [2m(preset: [36mcloudflare-module[39m, compatibility: [36m2026-08-06[39m)[22m
+[90m[[90mnitro[90m][39m [32m✔[39m Generated public [36m.output/public[39m
+[36mvite v8.2.1 [32mbuilding nitro environment for production...[36m[39m
+[2Ktransforming...✓ 1964 modules transformed.
+rendering chunks...
+computing gzip size...
+.output/server/_ssr/empty-plugin-adapters-D9UWiqvJ.mjs         0.23 kB │ gzip:   0.16 kB
+.output/server/_chunks/ssr-renderer.mjs                        0.60 kB │ gzip:   0.36 kB
+.output/server/_ssr/useAuth-CYm0zXNo.mjs                       0.90 kB │ gzip:   0.49 kB
+.output/server/_ssr/Logo-D8Cxh39n.mjs                          1.00 kB │ gzip:   0.47 kB
+.output/server/_libs/hookable.mjs                              1.16 kB │ gzip:   0.51 kB
+.output/server/_runtime.mjs                                    1.44 kB │ gzip:   0.67 kB
+.output/server/_ssr/start-CKXsRWxz.mjs                         1.85 kB │ gzip:   0.84 kB
+.output/server/_ssr/button-DRsC1qZi.mjs                        2.05 kB │ gzip:   0.91 kB
+.output/server/_tanstack-start-manifest_v-gbp7sfiV.mjs         2.32 kB │ gzip:   0.64 kB
+.output/server/_ssr/scans.functions-CJny-Cgf.mjs               2.73 kB │ gzip:   1.37 kB
+.output/server/_ssr/watchman-api-k7bjsX76.mjs                  2.75 kB │ gzip:   1.17 kB
+.output/server/_ssr/createCsrfMiddleware-B2To0gPJ.mjs          3.11 kB │ gzip:   1.01 kB
+.output/server/_libs/class-variance-authority+clsx.mjs         3.17 kB │ gzip:   1.24 kB
+.output/server/_ssr/scans.functions-DI8WZ43S.mjs               3.38 kB │ gzip:   1.54 kB
+.output/server/_authenticated-DKq9CQ8c.mjs                     3.51 kB │ gzip:   1.24 kB
+.output/server/_ssr/ssr.mjs                                    4.58 kB │ gzip:   1.93 kB
+.output/server/_ssr/history-mp2F39h8.mjs                       5.04 kB │ gzip:   1.66 kB
+.output/server/_ssr/ResultCard-DXMOagg1.mjs                    5.28 kB │ gzip:   1.32 kB
+.output/server/_ssr/auth-BCZUM7p5.mjs                          6.77 kB │ gzip:   2.19 kB
+.output/server/_libs/tanstack__react-query.mjs                 7.36 kB │ gzip:   1.94 kB
+.output/server/_ssr/dashboard-Crk5BVye.mjs                     7.36 kB │ gzip:   2.27 kB
+.output/server/_ssr/detect-orfWbcBq.mjs                        7.50 kB │ gzip:   3.24 kB
+.output/server/_libs/h3-v2+rou3+srvx.mjs                       9.87 kB │ gzip:   3.06 kB
+.output/server/_ssr/routes-DpCdWelG.mjs                        9.97 kB │ gzip:   2.70 kB
+.output/server/_libs/lucide-react.mjs                         11.86 kB │ gzip:   2.72 kB
+.output/server/_libs/tanstack__history.mjs                    12.05 kB │ gzip:   3.46 kB
+.output/server/_ssr/router-C18WoxHt.mjs                       12.11 kB │ gzip:   3.17 kB
+.output/server/index.mjs                                      12.78 kB │ gzip:   3.96 kB
+.output/server/_libs/@radix-ui/react-label+[...].mjs          15.31 kB │ gzip:   4.20 kB
+.output/server/_libs/h3+rou3+srvx.mjs                         16.62 kB │ gzip:   4.80 kB
+.output/server/_libs/@radix-ui/react-compose-refs+[...].mjs   16.85 kB │ gzip:   4.68 kB
+.output/server/_libs/sonner.mjs                               53.68 kB │ gzip:  12.12 kB
+.output/server/_ssr/server-8tECIjOw.mjs                       65.43 kB │ gzip:  17.13 kB
+.output/server/_libs/tanstack__query-core.mjs                 66.04 kB │ gzip:  13.94 kB
+.output/server/_libs/tailwind-merge.mjs                       88.13 kB │ gzip:  15.66 kB
+.output/server/_libs/zod.mjs                                  99.94 kB │ gzip:  17.24 kB
+.output/server/_libs/@tanstack/router-core+[...].mjs         122.31 kB │ gzip:  25.85 kB
+.output/server/_libs/@tanstack/react-router+[...].mjs        646.15 kB │ gzip: 136.47 kB
+
+[32m✓ built in 5.87s[39m
+[90m[[90mnitro[90m][39m [36mℹ[39m Using auto generated worker name: [36mtanstack-start-ts-scampat-guardian-main-scampat-guardian-main[39m
+[36mℹ[39m Generated [36m.output/server/wrangler.json[39m
+[36mℹ[39m Generated [36m.wrangler/deploy/config.json[39m
+[36mℹ[39m Generated [36m.output/public/_headers[39m
+[36mℹ[39m Generated [36m.output/nitro.json[39m
+
+[90m[[90mnitro[90m][39m [32m✔[39m You can preview this build using [36mnpx vite preview[39m
+[90m[[90mnitro[90m][39m [32m✔[39m You can deploy this build using [36mnpx nitro deploy --prebuilt[39m

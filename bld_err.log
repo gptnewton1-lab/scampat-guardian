@@ -1,0 +1,29 @@
+[33mThe plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the [1mresolve.tsconfigPaths[22m option. You can remove the plugin and set [1mresolve.tsconfigPaths: true[22m in your Vite config instead.[39m
+[33m[plugin tanstack-start-core::server-fn:client] C:/Users/USER/Desktop/frontend/scampat-guardian-main/scampat-guardian-main/src/lib/scans.functions.ts:71:28 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+[33m[plugin tanstack-start-core::server-fn:client] C:/Users/USER/Desktop/frontend/scampat-guardian-main/scampat-guardian-main/src/lib/scans.functions.ts:89:27 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+[33m[33m[PLUGIN_TIMINGS] [0mYour build spent 20% of 72.6s inside plugin hooks (14.2s).
+Measured inside the callback, so queue time is excluded and time the callback itself awaited is not:
+  - vite:css transform (6%, 4.5s, 1 call)
+  - @tailwindcss/vite:generate:build transform (5%, 3.6s, 1 call)
+  - tanstack-start-core:import-protection-transform-cache transform (2%, 1.2s, 1924 calls)
+  - tanstack-router:code-splitter:compile-reference-file transform (2%, 1.2s, 8 calls)
+  - vite-tsconfig-paths resolveId (2%, 1.1s, 5823 calls)
+Those rows are 16% of the build; the rest of the 20% is below.
+Not measurable — 2 hooks whose calls overlap, so elapsed time covers work other calls were doing. Profile with `node --cpu-prof`:
+  - tanstack-start-core:import-protection resolveId (5714 calls)
+  - tanstack-start-core::server-fn:client transform (17 calls)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+[39m
+[33m[plugin tanstack-start-core::server-fn:ssr] C:/Users/USER/Desktop/frontend/scampat-guardian-main/scampat-guardian-main/src/lib/scans.functions.ts?tss-serverfn-split:71:28 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+[33m[plugin tanstack-start-core::server-fn:ssr] C:/Users/USER/Desktop/frontend/scampat-guardian-main/scampat-guardian-main/src/lib/scans.functions.ts?tss-serverfn-split:89:27 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+[33m[plugin tanstack-start-core::server-fn:ssr] C:/Users/USER/Desktop/frontend/scampat-guardian-main/scampat-guardian-main/src/lib/scans.functions.ts:71:28 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+[33m[plugin tanstack-start-core::server-fn:ssr] C:/Users/USER/Desktop/frontend/scampat-guardian-main/scampat-guardian-main/src/lib/scans.functions.ts:89:27 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+[33m[33m[PLUGIN_TIMINGS] [0mYour build spent 60% of 3.9s inside plugin hooks (2.3s).
+Not measurable — 2 hooks whose calls overlap, so elapsed time covers work other calls were doing. Profile with `node --cpu-prof`:
+  - tanstack-start-core:import-protection resolveId (227 calls)
+  - tanstack-start-core::server-fn:ssr transform (14 calls)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+[39m
+
+[43m[30m WARN [39m[49m [36minlineDynamicImports[39m option is ignored because the [36mcodeSplitting[39m option is specified.
+
