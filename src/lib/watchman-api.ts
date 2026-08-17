@@ -219,6 +219,41 @@ export async function refreshMe(): Promise<WatchmanUser> {
 }
 
 // ---------------------------------------------------------------------------
+// Monetbil payments (one-time mobile money premium packages)
+// ---------------------------------------------------------------------------
+export type PremiumPlan = {
+  id: string;
+  name: string;
+  days: number;
+  price_fcfa: number;
+};
+
+export type CheckoutResponse = {
+  payment_url: string;
+  plan: string;
+  name: string;
+  days: number;
+  price_fcfa: number;
+};
+
+/** Public: the purchasable Monetbil premium offers (for the upgrade dialog). */
+export async function getPlans(): Promise<PremiumPlan[]> {
+  return request<PremiumPlan[]>("/payments/monetbil/plans");
+}
+
+/**
+ * Start a Monetbil mobile-money payment. The returned payment_url is where
+ * the browser must redirect; Monetbil notifies our backend on completion.
+ */
+export async function createCheckout(plan: string): Promise<CheckoutResponse> {
+  return request<CheckoutResponse>("/payments/monetbil/checkout", {
+    method: "POST",
+    token: getStoredToken(),
+    body: { plan },
+  });
+}
+
+// ---------------------------------------------------------------------------
 // Scans
 // ---------------------------------------------------------------------------
 export async function detect(message: string): Promise<DetectResponse> {

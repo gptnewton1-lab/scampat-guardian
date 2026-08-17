@@ -5,14 +5,11 @@ import { useServerFn } from "@tanstack/react-start";
 import { toast } from "sonner";
 
 import { ResultCard } from "@/components/ResultCard";
+import { UpgradeButton } from "@/components/UpgradeDialog";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { analyzeImage } from "@/lib/scans.functions";
-import {
-  ApiError,
-  CHECKOUT_URL,
-  type ScanRecord,
-} from "@/lib/watchman-api";
+import { ApiError, type ScanRecord } from "@/lib/watchman-api";
 
 /**
  * PREMIUM image/photo scan.
@@ -134,13 +131,7 @@ export function ImageScan() {
             Photo scanning is a Premium feature. Upgrade to scan screenshots and
             get unlimited scans.
           </p>
-          {CHECKOUT_URL && (
-            <Button asChild size="sm">
-              <a href={CHECKOUT_URL} target="_blank" rel="noreferrer">
-                Upgrade
-              </a>
-            </Button>
-          )}
+          <UpgradeButton size="sm" />
         </div>
       )}
 

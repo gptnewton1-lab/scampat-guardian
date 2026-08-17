@@ -3,10 +3,11 @@ import { useEffect } from "react";
 import { Loader2, LogOut } from "lucide-react";
 
 import { Logo } from "@/components/Logo";
+import { UpgradeButton } from "@/components/UpgradeDialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
-import { CHECKOUT_URL, logout } from "@/lib/watchman-api";
+import { logout } from "@/lib/watchman-api";
 
 export const Route = createFileRoute("/_authenticated")({
   component: AuthenticatedLayout,
@@ -62,13 +63,7 @@ function AuthenticatedLayout() {
             ) : (
               <>
                 <Badge variant="secondary">Free</Badge>
-                {CHECKOUT_URL && (
-                  <Button asChild variant="secondary" size="sm">
-                    <a href={CHECKOUT_URL} target="_blank" rel="noreferrer">
-                      Upgrade
-                    </a>
-                  </Button>
-                )}
+                <UpgradeButton variant="secondary" size="sm" />
               </>
             )}
             <span className="hidden max-w-[10rem] truncate text-sm text-muted-foreground sm:block">

@@ -10,11 +10,12 @@ import { useAuth } from "@/hooks/useAuth";
 
 import { ImageScan } from "@/components/ImageScan";
 import { ResultCard } from "@/components/ResultCard";
+import { UpgradeButton } from "@/components/UpgradeDialog";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { SAMPLE_MESSAGES } from "@/lib/detect";
 import { listScans, scanMessage, type ScanRecord } from "@/lib/scans.functions";
-import { ApiError, CHECKOUT_URL } from "@/lib/watchman-api";
+import { ApiError } from "@/lib/watchman-api";
 
 const dashboardSearch = z.object({
   /** "1" when the checkout success_url returns to the app. */
@@ -92,13 +93,7 @@ function Dashboard() {
             You've reached your daily scan limit. Upgrade to Premium for
             unlimited scans and photo scanning.
           </p>
-          {CHECKOUT_URL && (
-            <Button asChild size="sm">
-              <a href={CHECKOUT_URL} target="_blank" rel="noreferrer">
-                Upgrade
-              </a>
-            </Button>
-          )}
+          <UpgradeButton size="sm" />
         </section>
       )}
 
