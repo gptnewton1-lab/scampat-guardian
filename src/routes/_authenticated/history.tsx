@@ -12,13 +12,13 @@ import { deleteScan, listScans } from "@/lib/scans.functions";
 export const Route = createFileRoute("/_authenticated/history")({
   head: () => ({
     meta: [
-      { title: "Scan history — Faro-Detect" },
+      { title: "Scan history — Watchman" },
       {
         name: "description",
-        content: "Review every SMS you have analysed with Faro-Detect, with status, risk score and timestamp.",
+        content: "Review every SMS you have analysed with Watchman, with status, risk score and timestamp.",
       },
-      { property: "og:title", content: "Scan history — Faro-Detect" },
-      { property: "og:description", content: "Your saved Faro-Detect scan results." },
+      { property: "og:title", content: "Scan history — Watchman" },
+      { property: "og:description", content: "Your saved Watchman scan results." },
     ],
   }),
   component: HistoryPage,

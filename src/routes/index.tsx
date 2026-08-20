@@ -53,13 +53,13 @@ const FEATURES = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Faro-Detect — Spot SMS scams before they cost you" },
+      { title: "Watchman — Spot SMS scams before they cost you" },
       {
         name: "description",
         content:
           "Paste a suspicious SMS and get an instant risk score, scam category and plain-English explanation. Built for mobile money fraud in Cameroon and across Africa.",
       },
-      { property: "og:title", content: "Faro-Detect — Spot SMS scams before they cost you" },
+      { property: "og:title", content: "Watchman — Spot SMS scams before they cost you" },
       {
         property: "og:description",
         content:
@@ -98,7 +98,7 @@ function Landing() {
               Know if that SMS is a <span className="text-gradient">scam</span> in one second.
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Faro-Detect reads suspicious messages the way a fraud analyst would — checking for OTP
+              Watchman reads suspicious messages the way a fraud analyst would — checking for OTP
               requests, fake MoMo alerts, urgency pressure and phishing links — then tells you
               exactly why it is dangerous.
             </p>
@@ -187,7 +187,7 @@ function Landing() {
       <footer className="border-t border-border">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <Logo className="text-foreground" />
-          <p>Faro-Detect — verify before you trust.</p>
+          <p>Watchman — verify before you trust.</p>
         </div>
       </footer>
     </div>

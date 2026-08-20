@@ -26,12 +26,12 @@ export const Route = createFileRoute("/_authenticated/dashboard")({
   validateSearch: dashboardSearch,
   head: () => ({
     meta: [
-      { title: "Dashboard — Faro-Detect" },
+      { title: "Dashboard — Watchman" },
       {
         name: "description",
         content: "Paste a suspicious SMS to get an instant risk score, scam category and explanation.",
       },
-      { property: "og:title", content: "Dashboard — Faro-Detect" },
+      { property: "og:title", content: "Dashboard — Watchman" },
       { property: "og:description", content: "Scan suspicious SMS messages for scam indicators." },
     ],
   }),

@@ -1,5 +1,5 @@
 /**
- * Faro-Detect scam detection engine.
+ * Watchman scam detection engine.
  *
  * Pure, dependency-free rule engine. Each rule contributes weight to a raw
  * score; the raw score is normalised to a 0-100 risk score. The dominant

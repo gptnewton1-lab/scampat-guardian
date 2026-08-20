@@ -1,5 +1,5 @@
 /**
- * Server functions for Faro-Detect scans.
+ * Server functions for Watchman scans.
  *
  * These still run on the server (so our API's CORS/localStorage rules don't
  * matter for them), but they now proxy to our own Watchman FastAPI backend

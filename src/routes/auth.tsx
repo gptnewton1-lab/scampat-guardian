@@ -24,15 +24,15 @@ export const Route = createFileRoute("/auth")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Sign in — Faro-Detect" },
+      { title: "Sign in — Watchman" },
       {
         name: "description",
-        content: "Sign in or create your Faro-Detect account to scan suspicious SMS and keep your scan history.",
+        content: "Sign in or create your Watchman account to scan suspicious SMS and keep your scan history.",
       },
-      { property: "og:title", content: "Sign in — Faro-Detect" },
+      { property: "og:title", content: "Sign in — Watchman" },
       {
         property: "og:description",
-        content: "Access your Faro-Detect dashboard and scan history.",
+        content: "Access your Watchman dashboard and scan history.",
       },
     ],
   }),
@@ -66,7 +66,7 @@ function AuthPage() {
     try {
       if (mode === "register") {
         await signup(parsed.data.email, parsed.data.password);
-        toast.success("Welcome to Faro-Detect");
+        toast.success("Welcome to Watchman");
       } else {
         await login(parsed.data.email, parsed.data.password);
         toast.success("Signed in");
@@ -131,7 +131,7 @@ function AuthPage() {
           </form>
 
           <p className="mt-6 text-center text-sm text-muted-foreground">
-            {mode === "register" ? "Already have an account?" : "New to Faro-Detect?"}{" "}
+            {mode === "register" ? "Already have an account?" : "New to Watchman?"}{" "}
             <button
               type="button"
               className="font-medium text-primary underline-offset-4 hover:underline"
